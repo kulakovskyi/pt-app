@@ -1,0 +1,268 @@
+$blue: #000055
+$magenta: #ff267e
+$green: #05C489
+$green-hover: #09B47F
+$grey: #EDEDED
+$text: #292929
+$gray: #E8E8E8
+
+$font-suisse-bold: SuisseIntl-Bold, sans-serif
+$font-suisse-reg: SuisseIntl-Regular, sans-serif
+$font-suisse-med: SuisseIntl-Medium, sans-serif
+$font-suisse-semb: SuisseIntl-SemiBold, sans-serif
+$font-wulkan: WulkanDisplay, sans-serif
+
+body
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  img,
+  picture
+    max-width: 100%
+    height: auto
+    margin: 0
+    padding: 0
+
+.container
+  max-width: 1350px
+  padding: 0 15px
+  margin: 0 auto
+
+
+.title
+  font-family: $font-suisse-reg
+  font-size: 66px
+  line-height: 80px
+  text-transform: uppercase
+  color: $gray
+  span
+    font-family: $font-wulkan
+
+
+//game block
+.game
+  overflow: hidden
+  padding: 90px 0 0 0
+  background: $blue
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__title
+    max-width: 761px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin: 0 15px 70px 0
+    &-top
+      padding: 10px 18px 8px
+      background: $magenta
+      white-space: nowrap
+    &-center
+      margin: -3px 0 0 0
+      padding: 0 18px 8px
+      background: $magenta
+    &-bottom
+      margin: -3px 0 0 0
+      padding: 0 18px 8px
+      background: $magenta
+      display: flex
+      &_one
+        padding: 0 15px 0 0
+
+  &__links
+    display: flex
+    align-items: center
+    max-width: 510px
+  &__ios,
+  &__google
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &-link
+      max-width: 246px
+      margin: 0 0 20px 0
+    &-instr
+      font-family: $font-suisse-semb
+      color: $gray
+      font-size: 16px
+      line-height: 21px
+      letter-spacing: 0.04em
+      text-decoration: underline
+      text-transform: uppercase
+      cursor: pointer
+      &:hover
+        text-decoration: none
+  &__ios
+    margin: 0 20px 0 0
+  &__image
+    max-width: 320px
+    margin: 0 40px -4px 0
+
+//info
+.info
+  padding: 52px 0 50px
+  background: #DADADA
+  &__text
+    font-family: $font-suisse-semb
+    font-size: 28px
+    line-height: 48px
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    color: $blue
+    span
+      font-family: $font-wulkan
+
+//ios download
+.download-ios
+  background: $blue
+  padding: 0 0 108px 0
+  overflow: hidden
+  &__title
+    padding: 17px 37px 15px 24px
+    //display: inline-block
+    background: $magenta
+    margin: 0 0 90px 0
+    display: inline-flex
+    align-items: center
+    &-top
+      padding: 0 15px 0 0
+  &__row
+    display: flex
+    justify-content: space-between
+  &__step
+    display: flex
+    align-items: flex-end
+    &-one
+      margin: 0 35px 0 0
+    &-info
+      font-family: $font-suisse-med
+      display: inline-block
+      font-size: 20px
+      line-height: 30px
+      color: $blue
+      background: $magenta
+      text-transform: uppercase
+      padding: 0 8px
+      margin: 0 0 25px 0
+    &-image
+      max-width: 225px
+      margin: 0 0 17px 0
+    &-text,
+    &-qr_text
+      font-family: $font-suisse-med
+      color: $gray
+      text-transform: uppercase
+      font-size: 18px
+      line-height: 29px
+      letter-spacing: 0.04em
+    &-text
+      margin: 0 0 16px 0
+    &-link
+      display: inline-block
+      padding: 17px 26px 15px
+      min-width: 260px
+      text-align: center
+      background: $green
+      font-family: $font-suisse-semb
+      letter-spacing: 0.07em
+      text-transform: uppercase
+      font-size: 15px
+      line-height: 19px
+      color: $blue
+      border-radius: 4px
+      transition: background .3s ease
+      &:hover
+        background: $green-hover
+    &-qr
+      margin: 0 0 20px 0
+    &-qr_text
+      max-width: 250px
+
+//android-download
+.download-android
+  background: #DADADA
+  position: relative
+  padding: 0 0 250px 0
+  overflow: hidden
+
+  .para-ios_2
+    display: none
+
+  &__try
+    font-family: $font-suisse-semb
+    font-size: 48px
+    line-height: 50px
+    letter-spacing: 0.02em
+    padding: 11px 16px 9px
+    background: $magenta
+    position: absolute
+    text-transform: uppercase
+    color: $gray
+    bottom: 0
+    right: 0
+    span
+      font-family: $font-wulkan
+
+  &__title
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &-top
+      padding: 14px 24px 12px
+      background: $magenta
+    &-bottom
+      padding: 0 24px 12px
+      background: $magenta
+      margin-top: -3px
+  &__row
+    display: flex
+    align-items: flex-start
+    justify-content: flex-end
+  &__image
+    max-width: 950px
+    position: absolute
+    //right: calc(100% - 1000px)
+    left: 70px
+    top: 122px
+    z-index: 1
+
+  &__item
+    font-family: $font-suisse-reg
+    color: $blue
+    font-size: 18px
+    line-height: 58px
+    letter-spacing: 0.06em
+    &:not(:last-child)
+      margin: 0 0 9px 0
+
+//down
+.down
+  background: $blue
+  padding: 60px 0
+  position: relative
+  z-index: 2
+  &__links
+    display: flex
+    align-items: center
+    justify-content: center
+  &__link
+    max-width: 244px
+    img
+      max-width: 244px
+  &__ios-link
+    margin: 0 20px 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
