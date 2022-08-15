@@ -17,7 +17,7 @@ section.game
                                 source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/apple-mob.png")
                                 source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/apple-mob.png")
                                 img(src="img/apple-desc.png" alt="Favbet")
-                        .game__ios-instr instrução
+                        a(href='#ios-guide').game__ios-instr instrução
                     .game__google
                         a(href='#').game__link.game__google-link
                             picture
@@ -26,7 +26,7 @@ section.game
                                 source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/google-mob.png")
                                 source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/google-mob.png")
                                 img(src="img/google-desc.png" alt="Favbet")
-                        .game__google-instr instrução
+                        a(href='#google-guide').game__google-instr instrução
             .game__image
                 picture
                     source(media="(min-width: 551px) and (orientation: landscape) and (min-height: 500px)" srcset="img/game-desc.png")
@@ -38,7 +38,7 @@ section.game
     .container
         p.info__text A fila no caixa é como uma parede chinesa? Cansado de engarrafamentos? #[span Acenda] seu tempo livre com o aplicativo #[span Favbet]
 section.download-ios
-    h2.download-ios__title.title
+    h2(id='ios-guide').download-ios__title.title
         .download-ios__title-top Como #[span instalar]
         .download-ios__title-bottom para IOS?
 
@@ -67,7 +67,7 @@ section.download-ios
                         img(src='img/qr-ios-2.svg' alt="qr-ios")
                     p.download-ios__step-qr_text Ou digitalize o código QR usando a câmera do seu dispositivo iOS
 section.download-android
-    h2.download-android__title.title
+    h2(id='google-guide').download-android__title.title
         .download-android__title-top Como #[span instalar] #[span.para-ios para]
         .download-android__title-bottom #[span.para-ios_2 para] android?
     .download-android__try Spoiler: #[span fácil]
