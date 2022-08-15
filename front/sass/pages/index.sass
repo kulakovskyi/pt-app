@@ -188,7 +188,7 @@ body
   overflow: hidden
   .container
     position: relative
-    padding: 0 100px
+    padding: 0 65px
 
   .para-ios_2
     display: none
@@ -238,6 +238,16 @@ body
     letter-spacing: 0.06em
     &:not(:last-child)
       margin: 0 0 9px 0
+
+  &__list
+    list-style-type: none
+    counter-reset: num
+    padding: 0
+    li::before
+      counter-increment: num
+      content: counter(num) '. '
+      font-family: $font-suisse-reg
+      color: $blue
 
 //down
 .down
